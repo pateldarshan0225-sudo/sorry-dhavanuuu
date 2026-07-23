@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry Dhavanuuu ❤️</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            max-width: 650px;
+            margin: 15px auto;
+            line-height: 1.7;
+        }
+
+        /* GLASS */
+        .glass {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 20px;
+            margin: 15px;
+        }
+
+        /* BUTTON */
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            margin: 10px;
+            transition: 0.3s;
+        }
+
+        #yesBtn {
+            background: #ff2e63;
+            color: #fff;
+        }
+
+        #noBtn {
+            position: absolute;
+            background: #333;
+            color: #fff;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* SECTIONS */
+        .section {
+            padding: 50px 15px;
+        }
+
+        /* RESPONSIVE CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .card small {
+            display: block;
+            font-size: 0.75rem;
+            margin-top: 5px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* GALLERY */
+        .gallery img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        /* POPUP */
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            background: #fff;
+            color: #333;
+            padding: 25px;
+            border-radius: 20px;
+            transition: 0.4s;
+        }
+
+        .popup.active {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        /* HEART */
+        .heart {
+            position: fixed;
+            bottom: -10px;
+            animation: floatUp 6s linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-100vh);
+                opacity: 0;
+            }
+        }
+
+        /* MOBILE */
+        @media(max-width:600px) {
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 12px;
+            padding: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            /* perfect square */
+            object-fit: cover;
+            /* crop nicely */
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero">
+        <h1>I'm Sorry Dhavanuuu 🥺❤️</h1>
+
+        <div class="glass">
+            <p id="typing"></p>
+
+            <p>
+                Dhavanuuu... 💔<br><br>
+                Mujhse galti ho gayi... main college, kaam aur tuition me itna busy ho gaya ki main tumhe time nahi de
+                paaya...
+                Par sach ye hai ki tum meri life ka sabse important part ho 💖
+                Aur main tumhe ignore nahi kar raha tha... bas situation me phas gaya tha 😔
+                <br><br>
+                Please mujhe ek chance de do... main sab thik kar dunga 🥺❤️
+            </p>
+
+            <button class="btn" id="yesBtn" onclick="showPopup()">Forgive Me ❤️</button>
+            <button class="btn" id="noBtn">No 😏</button>
+        </div>
+    </div>
+
+    <!-- LOVE -->
+    <div class="section">
+        <h2>Why I Love You 💖</h2>
+
+        <div class="cards">
+            <div class="card">Your Smile 😊<small>Fixes everything</small></div>
+            <div class="card">Your Care 💕<small>Purest thing ever</small></div>
+            <div class="card">Your Love ❤️<small>Feels like home</small></div>
+            <div class="card">Your Voice 🎶<small>Peace for me</small></div>
+            <div class="card">Your Eyes ✨<small>My world</small></div>
+            <div class="card">Your Support 💪<small>Always with me</small></div>
+        </div>
+    </div>
+
+    <!-- MEMORIES -->
+    <div class="section">
+        <h2>Our Memories 📸</h2>
+        <div class="gallery">
+            <img src="img1.jpeg">
+            <img src="img2.jpeg">
+            <img src="img3.jpeg">
+        </div>
+    </div>
+
+    <!-- MESSAGE -->
+    <div class="section">
+        <h2>My Heart 💌</h2>
+        <p>
+            Tum meri life ho Dhavanuuu ❤️
+            Main perfect nahi hu... par tumhare liye better banne ki koshish zaroor karunga 💖
+        </p>
+    </div>
+
+    <!-- POPUP -->
+    <div class="popup" id="popup">
+        <h2>Thank You 🥺❤️</h2>
+        <p>I love you forever 💖</p>
+    </div>
+
+    <!-- MUSIC -->
+    <audio id="music" loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3">
+    </audio>
+
+    <button onclick="toggleMusic()" style="position:fixed;bottom:20px;right:20px;">🎵</button>
+
+    <script>
+        // Typing (more emotional)
+        const text = "Every moment without you feels incomplete... I really miss you Dhavanuuu 🥺❤️";
+        let i = 0;
+        function typing() {
+            if (i < text.length) {
+                document.getElementById("typing").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typing, 60);
+            }
+        }
+        typing();
+
+        // Popup + music start
+        function showPopup() {
+            document.getElementById("popup").classList.add("active");
+            document.getElementById("music").play();
+        }
+
+        // Music toggle
+        function toggleMusic() {
+            const m = document.getElementById("music");
+            m.paused ? m.play() : m.pause();
+        }
+
+        // NO button (mobile + desktop)
+        const noBtn = document.getElementById("noBtn");
+        const yesBtn = document.getElementById("yesBtn");
+
+        function moveBtn() {
+            const x = Math.random() * (window.innerWidth - 100);
+            const y = Math.random() * (window.innerHeight - 100);
+            noBtn.style.left = x + "px";
+            noBtn.style.top = y + "px";
+            yesBtn.style.transform = "scale(1.2)";
+        }
+
+        noBtn.addEventListener("mouseover", moveBtn);
+        noBtn.addEventListener("touchstart", moveBtn);
+
+        // Hearts
+        function createHeart() {
+            const heart = document.createElement("div");
+            heart.classList.add("heart");
+            heart.innerHTML = "❤️";
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.fontSize = (Math.random() * 20 + 10) + "px";
+            document.body.appendChild(heart);
+            setTimeout(() => heart.remove(), 6000);
+        }
+        setInterval(createHeart, 300);
+    </script>
+
+</body>
+
+</html>
